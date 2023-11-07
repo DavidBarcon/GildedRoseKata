@@ -170,6 +170,19 @@ namespace GildedRose.Test
             gildedRose.Items[0].Quality.Should().Be(0);
         }
 
+        [Test]
+        public void conjure_item_quality_degrades_twice_as_fast()
+        {
+            Item item = new Item() { Name = "Conjured", Quality = 5, SellIn = 5 };
+            List<Item> list = new List<Item>();
+            list.Add(item);
+
+            var gildedRose = new GildedRose(list);
+            gildedRose.UpdateQuality();
+
+            gildedRose.Items[0].Quality.Should().Be(3);
+        }
+
 
     }
 }
