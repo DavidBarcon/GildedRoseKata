@@ -16,7 +16,7 @@ namespace GildedRose.Test
             var gildedRose = new GildedRose(list);
             gildedRose.UpdateQuality();
 
-            item.Quality.Should().Be(0);
+            gildedRose.Items[0].Quality.Should().Be(0);
         }
 
         [Test]
@@ -47,9 +47,9 @@ namespace GildedRose.Test
             var gildedRose = new GildedRose(list);
             gildedRose.UpdateQuality();
 
-            item.SellIn.Should().Be(4);
-            brieItem.SellIn.Should().Be(4);
-            passItem.SellIn.Should().Be(4);
+            gildedRose.Items[0].SellIn.Should().Be(4);
+            gildedRose.Items[1].SellIn.Should().Be(4);
+            gildedRose.Items[2].SellIn.Should().Be(4);
         }
 
         [Test]
@@ -76,7 +76,7 @@ namespace GildedRose.Test
             var gildedRose = new GildedRose(list);
             gildedRose.UpdateQuality();
 
-            item.Quality.Should().Be(4);
+            gildedRose.Items[0].Quality.Should().Be(4);
         }
 
         [Test]
@@ -89,7 +89,7 @@ namespace GildedRose.Test
             var gildedRose = new GildedRose(list);
             gildedRose.UpdateQuality();
 
-            item.Quality.Should().Be(6);
+            gildedRose.Items[0].Quality.Should().Be(6);
         }
 
         [Test]
@@ -102,7 +102,7 @@ namespace GildedRose.Test
             var gildedRose = new GildedRose(list);
             gildedRose.UpdateQuality();
 
-            item.Quality.Should().Be(3);
+            gildedRose.Items[0].Quality.Should().Be(3);
         }
 
         [Test]
@@ -115,7 +115,7 @@ namespace GildedRose.Test
             var gildedRose = new GildedRose(list);
             gildedRose.UpdateQuality();
 
-            item.Quality.Should().Be(7);
+            gildedRose.Items[0].Quality.Should().Be(7);
         }
 
         [Test]
@@ -128,7 +128,7 @@ namespace GildedRose.Test
             var gildedRose = new GildedRose(list);
             gildedRose.UpdateQuality();
 
-            item.Quality.Should().Be(6);
+            gildedRose.Items[0].Quality.Should().Be(6);
         }
 
         [Test]
@@ -141,7 +141,7 @@ namespace GildedRose.Test
             var gildedRose = new GildedRose(list);
             gildedRose.UpdateQuality();
 
-            item.Quality.Should().Be(7);
+            gildedRose.Items[0].Quality.Should().Be(7);
         }
 
         [Test]
@@ -154,7 +154,7 @@ namespace GildedRose.Test
             var gildedRose = new GildedRose(list);
             gildedRose.UpdateQuality();
 
-            item.Quality.Should().Be(8);
+            gildedRose.Items[0].Quality.Should().Be(8);
         }
 
         [Test]
@@ -167,7 +167,7 @@ namespace GildedRose.Test
             var gildedRose = new GildedRose(list);
             gildedRose.UpdateQuality();
 
-            item.Quality.Should().Be(0);
+            gildedRose.Items[0].Quality.Should().Be(0);
         }
 
 

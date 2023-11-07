@@ -21,9 +21,9 @@ namespace GildedRose
                 //if sellIn is greter than 10, quality +1
                 if (SellIn > 10) Quality += 1;
 
-                //if sellIn is less than 10 , quality +1
-                //if sellIn is less than 5 , additional quality +1
-                if (SellIn <= 10 ) Quality += 1;
+                //if sellIn is less than 10 , quality +2
+                //if sellIn is less than 5 too , additional quality +1
+                if (SellIn <= 10 ) Quality += 2;
                 if (SellIn <= 5) Quality += 1;
             }
 
