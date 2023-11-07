@@ -7,14 +7,14 @@ namespace GildedRose
     internal class PassItem: Item, UpdateInterface
     {
 
-        public PassItem(string name, int quality, int SellIn)
+        public PassItem(string name, int SellIn, int quality)
         {
             this.Name = name;
             this.Quality = quality;
             this.SellIn = SellIn;
         }
 
-        void UpdateInterface.UpdateQuality()
+        void UpdateInterface.Update()
         {
             if (Quality < 50 )
             {
@@ -29,10 +29,7 @@ namespace GildedRose
 
             //if sellIn es less than 0, quality is 0
             if (SellIn < 0) Quality = 0;
-        }
 
-        void UpdateInterface.UpdateSellIn()
-        {
             SellIn--;
         }
     }

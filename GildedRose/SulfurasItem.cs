@@ -7,20 +7,16 @@ namespace GildedRose
     internal class SulfurasItem: Item, UpdateInterface
     {
 
-        public SulfurasItem(string name, int quality, int SellIn)
+        public SulfurasItem(string name, int SellIn, int quality)
         {
             this.Name = name;
             this.Quality = quality;
             this.SellIn = SellIn;
         }
 
-        void UpdateInterface.UpdateQuality()
+        void UpdateInterface.Update()
         {
             Quality = Quality;
-        }
-
-        void UpdateInterface.UpdateSellIn()
-        {
             SellIn = SellIn;
         }
     }

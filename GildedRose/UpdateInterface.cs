@@ -6,7 +6,6 @@ namespace GildedRose
 {
     internal interface UpdateInterface
     {
-        public void UpdateQuality();
-        public void UpdateSellIn();
+        public void Update();
     }
 }
