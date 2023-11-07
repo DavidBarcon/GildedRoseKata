@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 
 namespace GildedRose {
     public class GildedRose {
@@ -64,11 +65,4 @@ namespace GildedRose {
         }
     }
 
-    public class Item {
-        public string Name { get; set; }
-
-        public int SellIn { get; set; }
-
-        public int Quality { get; set; }
-    }
 }
